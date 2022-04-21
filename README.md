@@ -1,4 +1,4 @@
-# Euclidean-algorithm
+# Euclidean-algorithm Calculator
 Euclidean algorithm calculator in Python
 
 ## Usage:
@@ -25,5 +25,5 @@ bi       0       1      -4       5      -14      47     -61      230    -291    
 qi                       4       1       2       3       1       3       1       3       3   
 ri       3600    767     532     235     62      49      13      10      3       1       0   
 
-ggT( 3600, 767) =  1
+ggT(3600, 767) =  1
 ```

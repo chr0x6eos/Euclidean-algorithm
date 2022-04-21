@@ -22,15 +22,16 @@ class Euclid:
 
     def format_line(self, header: str, list: List) -> str:
         tab = '\t'
+        data = []
         for i, x in enumerate(list):
             if x == None:
-                list[i] = ""
+                data.append("")
             else:
                 if x >= 0:
-                    list[i] = " " + str(x)
+                    data.append(" " + str(x))
                 else:
-                    list[i] = str(x)
-        return f'{header}{tab}{f"{tab}".join(list)}'
+                    data.append(str(x))
+        return f'{header}{tab}{f"{tab}".join(data)}'
 
     def print_final(self) -> None:
         data = []
@@ -40,7 +41,7 @@ class Euclid:
         q = self.format_line("qi", self.q)
         r = self.format_line("ri", self.r)
         [print(x) for x in [i, a, b, q, r]]
-        print(f"\nggT({self.r[0]},{self.r[1]}) = {self.r[-2]}")
+        print(f"\nggT({self.r[0]}, {self.r[1]}) = {self.r[-2]}")
 
     def euclid_algo(self) -> None:
         while self.r[self.i] != 0:
